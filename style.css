@@ -128,18 +128,18 @@ header {
 
 }
 .text-box -h1{
-    margin-top: 75px;
+    margin-top: 74px;
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 160px;
     justify-content: left;
 }
 .text-box a{
-    margin-top: 30px;
+    margin-top: 25px;
     display: inline-block;
     border-radius: 6px;
     color: var(--bg-color);
-    padding: 10px 30px;
+    padding: 20px 30px;
     text-decoration:none;
 }
 .text-box .btn{
@@ -148,6 +148,14 @@ header {
     font-weight: 600;
 
 }
+/* .about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img{
+    flex */
 
 
 
