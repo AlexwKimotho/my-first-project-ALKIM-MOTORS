@@ -79,7 +79,7 @@ header {
 #search-icon{
     font-size: 24px;
     cursor: pointer;
-    color: white;
+    color: var(--text-color);
 
 }
 .search-box{
@@ -113,7 +113,7 @@ header {
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(images/Background-home1.png);
+    background: url(images/toyota_land_cruiser_vx_r_2021_2-1920x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
