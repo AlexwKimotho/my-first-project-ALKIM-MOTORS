@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Max</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--navbar-->
+    <header>
+      <!--nav ontainer-->
+      <div class="nav container">
+        <!--menu Icon-->
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!--Logo-->
+        <a href="#" class="logo">Car <span>Max</span></a>
+        <!--nav list-->
+        <ul class="nav-bar">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#search">Search</a></li>
+        </ul>
+        <!--Search icon-->
+        <i class="bx bx-search-alt" id="search-icon"></i>
+        <!--search box-->
+        <div class="search-box container">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search For the car you want here."
+          />
+        </div>
+      </div>
+    </header>
+    <!--home-->
+    <section class="home" id="home"></section>
+    <div class="home-text"></div>
+    <h1>
+      We Have Everything<br />
+      Your <span>car</span>Needs
+    </h1>
+    <p>Don’t Only Dream it, Just Drive It</p>
+    <!--Home Button-->
+    <a href="a" class="btn">Discover Now</a>
+
+    <!--link to js-->
+    <script src="index.js"></script>
+
+    <form id="form">
+      <input type="Text" id="username" placeholder="username" required />
+      <input type="email" value="email" placeholder="Email" required />
+      <input type="submit" value="Register" />
+    </form>
+    <script>
+         var form = document.getElementById('form') 
+
+      form.addEventListener ('submit', function(event   ) {
+        event.preventDefault() // prevents form from autosubmiting
+
+        var username = document.getElementById('username').value
+
+        console.log(username)
+        var email = document.getElementById('email').value
+
+        console.log(email)
+        <button>
+        }
+    </script>
+
+    <div class="container1"></div>
+  </body>
+</html>
+
