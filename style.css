@@ -149,13 +149,35 @@ header {
 
 }
 /* .about{
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
 }
-.about-img{
-    flex */
+.about{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img{             
+    flex-shrink: 1 1 25rem;
+}
+.about-text{
+    flex:1 1 21rem;
+}
+.about-text span{
+    font-weight: 500;
+    color: var(--main-color);
+}
+.about-text h2{
+    font-size: 1.7rem;
+}
+.about-text p{
+    font-size: 0.93rem;
+    margin: 0.5rem 0 1.4rem;
+} */
 
 
 
