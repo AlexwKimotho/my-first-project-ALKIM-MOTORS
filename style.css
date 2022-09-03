@@ -16,6 +16,15 @@
     --text-color: #020102 ;
     --bg-color: #fff;
 }
+/* custom scroll */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: var(--text-color);
+}
 section{
     padding:4rem 0 2rem, 
 }
@@ -40,6 +49,14 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
+}
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    transition: 0.5s ease;
+}
+header.shadow #search-icon{
+    color: var(--text-color);
 }
 .nav{
     display: flex;
@@ -114,7 +131,7 @@ header {
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(images/toyota_land_cruiser_vx_r_2021_2-1920x1080.jpg);
+    background: url(/images/toyota_land_cruiser_vx_r_2021_2-1920x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -192,10 +209,12 @@ header {
 .footer-container .logo{
     color: var(--bg-color);
     margin-bottom: 1rem;
+    margin-top: cm;
 }
 .footer-container .footer-box{
     display: flex;
     flex-direction: column;
+    margin-top: 1cm;
 }
 .social{
     display: flex;
