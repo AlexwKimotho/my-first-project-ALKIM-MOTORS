@@ -1,9 +1,9 @@
-// let search = document.querySelector('.search-box');
+let search = document.querySelector('.search-box');
 
-// document.querySelector('#search-icon'); onclick = () =>{
-//     search.classList.toggle('active');
-//     menu.classList.replace('active');
-// }
+document.querySelector('#search-icon'); onclick = () =>{
+    search.classList.toggle('active');
+    menu.classList.replace('active');
+}
 
 // let menu = document.querySelector('.nav-bar');
 
