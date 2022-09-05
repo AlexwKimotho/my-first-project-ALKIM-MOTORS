@@ -174,20 +174,24 @@ header.shadow #search-icon{
 .section2 text {
     flex:1 1 21rem;
     align-items: center;
+    justify-content: center;
 }
 .section2 span{
     font-weight: 900;
     color: var(--main-color);
-    font-size:300%;
-    align-items:ce;
+    font-size:2rem;
+    justify-content: center;
+    align-items: center;
 }
-.section2 h2{
+/* .section2 h2{
     font-size: 2rem;
-}
+    justify-content: center;
+} */
 
 .section2 p{
     font-size: 1.5rem;  
     margin  : 0.5rem;
+    justify-content: flex-start;
 }
 .section2 {
     display:flex;
@@ -197,6 +201,67 @@ header.shadow #search-icon{
     max-width: 60%;
     height: auto;
 }
+
+/* contat us section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact-text-box h1 {
+    display: flex;
+    align-items: center;
+    color: #d90429;
+    justify-content: center;
+    font-size: 2rem;
+}
+form {
+    background:rgb(207, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: rgb(243, 170, 170);
+    font-size: 16px;
+}
+ form-button{
+    padding: 15px;
+    background: rgb(248, 166, 166);
+    color: white;
+    font-size: 18px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+
+ }
+
 /* Footer Section */
 .footer{
     background: var(--text-color);

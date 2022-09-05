@@ -27,7 +27,8 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#About us">About us</a></li>
           <li><a href="#contactUs">Contact Us</a></li>
-          <li><a href="#search">Search</a></li>>
+          <li><a href="#search">Search</a></li>
+          >
         </ul>
         <!--Search icon-->
         <i class="bx bx-search-alt" id="search-icon"></i>
@@ -40,75 +41,127 @@
             placeholder="Search For the car you want here."
           />
         </div>
-      </div>  
+      </div>
     </header>
 
     <!--home-->
-  <section class="home" id="home">
-  <div class="text-box">
-    <h1>
-      WE CAN HELP YOU SEARCH <br />
-      FOR THE<span> DREAM CAR</span> <br /> YOU DESIRE
-    </h1>
-    <p>Don`t Only Dream it, Just Drive It</p>
-    <a href="a" class="btn">Search Vehicle</a>
-    </div>
-  </section>
-
-  <!-- about section -->
-
-  <section class="section2 container" id="section2">
-    <div class="section2-img">
-          <img src="images/Amarock3.jpg"/>
+    <section class="home" id="home">
+      <div class="text-box">
+        <h1>
+          WE CAN HELP YOU SEARCH <br />
+          FOR THE<span> DREAM CAR</span> <br />
+          YOU DESIRE
+        </h1>
+        <p>Don`t Only Dream it, Just Drive It</p>
+        <a href="a" class="btn">Search Vehicle</a>
       </div>
-    <div class="section2-text"></div>
-    <span>About Us</span>
-    <!-- <h2> Find your Dream<br> Quality Vehicles </h2> -->
-    <p>We are dedicted to help you choose the perfect Volkswagen Amarock for you. Click the Search button above to Search for the perfect Vehicle for you. Choose the prefered model with the Engine you prefer as well as the model year. </p> 
-    <a href="#" class="btn">Click Here</a>
-  
-  </section>
+    </section>
 
-  <!--footer-->
-  <section class= "footer">
-    <div class="footer-container container">
-      <div class="footer-box">
-        <a href="#" class="logo">ALKIM<span> MOTORS</span></a>
-        <div class="social">
-          <a href="#"><i class='bx bxl-facebook-square'></i></a>
-          <a href="#"><i class='bx bxl-twitter'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
+    <!-- about section -->
 
+    <section class="section2 container" id="section2">
+      <div class="section2-text"></div>
+      <span>About us</span>
+      <!-- <h2> Find your Dream<br> Quality Vehicles </h2> -->
+      <p>
+        We are dedicted to help you choose the perfect Volkswagen Amarock for
+        you. Click the Search button above to Search for the perfect Vehicle for
+        you. Choose the prefered model with the Engine you prefer as well as the
+        model year.
+      </p>
+      <a href="#" class="btn">Click Here</a>
+      <div class="section2-img">
+        <img src="images/Amarock3.jpg" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <!-- <section class = "Contact us"> -->
+      <div class="contact-text-box">
+        <h1>
+          CONTACT-US
+
+          
+        </h1>
+    <div class="contact-container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" is required />
+        <input
+          type="email"
+          id="email"
+          placeholder="Email Address"
+          is
+          required
+        />
+        <input type="text" id="phone" placeholder="Phone Number" is required />
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button id="send">Submit</button>
+      </form>
+    </div>
+
+    <!-- adding functionality for the contact section to send emails using SMTP
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+          function sendEmail() {
+            Email.send({
+              Host: "smtp.elasticemail.com",
+              Username: "kimothoalex2001@gmal.com",
+              Password: "26F2A1AAD8DBCC631AA616F072D240872E96",
+              To: "smtp.elasticemail.com",
+              From: document.getElementById("email").value,
+              Subject: "New contact form inquiry",
+              Body: "And this is the body",
+            }).then(
+              (message) => alert(message)
+              );
+          }
+      </section>  
+
+
+      // --footer-->
+      <section class= "footer">
+        <div class="footer-container container">
+          <div class="footer-box">
+            <a href="#" class="logo">ALKIM<span> MOTORS</span></a>
+            <div class="social">
+              <a href="#"><i class='bx bxl-facebook-square'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Page</h3>
+            <a href="#">home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Search</a>
+          </div>
+          <div class="footer-box">
+            <h3>Legal</h3>
+            <a href="#">privacy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Cookie Policy</a>
+
+          </div>
+          <div class="footer-box">
+            <h3>Contact</h3>
+            <P>Brazil</P>
+            <p>Kenya</p>
+          </div>
         </div>
-      </div>
-      <div class="footer-box">
-        <h3>Page</h3> 
-        <a href="#">home</a>
-        <a href="#">About us</a>
-        <a href="#">Contact us</a>
-        <a href="#">Search</a>
-      </div>
-      <div class="footer-box">
-        <h3>Legal</h3> 
-        <a href="#">privacy</a>
-        <a href="#">Refund Policy</a>
-        <a href="#">Cookie Policy</a>
-        
-      </div>
-      <div class="footer-box">
-        <h3>Contact</h3> 
-        <P>Brazil</P>
-        <p>Kenya</p>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
+        </div>
+        </div>
+      </section>
 
-  
-   <!--link to js-->
-     <script src="index.js"></script>
 
-   
+       <!--link to js-->
+         <script src="index.js">
+    </script>
   </body>
 </html>
