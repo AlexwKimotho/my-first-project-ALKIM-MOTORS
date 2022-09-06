@@ -16,13 +16,14 @@
   <body>
     <!--navbar-->
     <header>
-      <!--nav ontainer-->
+      <!--nav container-->
       <div class="nav container">
         <!--menu Icon-->
         <i class="bx bx-menu" id="menu-icon"></i>
         <!--Logo-->
-        <a href="#" class="logo">ALKIM <span> MOTORS </span></a>
-        <!--nav list-->
+        <a href="#" class="logo"> ALKIM <span>MOTORS</span></a>
+        <!-- <input type = "text" placeholder = "Search" class="search-bar">  -->
+        <!-- nav list -->
         <ul class="nav-bar">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#About us">About us</a></li>
@@ -31,7 +32,9 @@
           >
         </ul>
         <!--Search icon-->
-        <i class="bx bx-search-alt" id="search-icon"></i>
+        <div <i class="bx bx-search-alt" id="search-icon"></i> 
+
+         </div>
         <!--search box-->
         <div class="search-box container">
           <input
@@ -45,21 +48,22 @@
     </header>
 
     <!--home-->
+
     <section class="home" id="home">
       <div class="text-box">
-        <h1>
-          WE CAN HELP YOU SEARCH <br />
-          FOR THE<span> DREAM CAR</span> <br />
-          YOU DESIRE
-        </h1>
-        <p>Don`t Only Dream it, Just Drive It</p>
-        <a href="a" class="btn">Search Vehicle</a>
+        <div> MakeName : "VW - VolksWagen" </div>
+        <div> vehicleTypeId : "AMAROK High.CD 2.0 16V TDI 4x4 Dies. Auto" </div>
+        <div> vehicleTypeName : 2014 </div>
+        <!-- button -->
+          <div class="primary-Button"> 
+          <button class="btn1 "> Search Car</button>
+         </div>
       </div>
     </section>
 
     <!-- about section -->
 
-    <section class="section2 container" id="section2">
+    <section class="section2 container" id="About Us">
       <div class="section2-text"></div>
       <span>About us</span>
       <!-- <h2> Find your Dream<br> Quality Vehicles </h2> -->
@@ -76,7 +80,7 @@
     </section>
 
     <!-- Contact Section -->
-    <!-- <!-- <section class = "Contact us"> -->
+    <section class = "Contact us" id ="Contact Us">
       <div class="contact-text-box">
         <h1>
           CONTACT-US
@@ -100,30 +104,17 @@
           rows="4"
           placeholder="How can we help you?"
         ></textarea>
-        <button id="send">Submit</button>
+        <button id="send" onclick="promptMe()">Submit</button>
       </form>
     </div>
 
-    <!-- adding functionality for the contact section to send emails using SMTP
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-          function sendEmail() {
-            Email.send({
-              Host: "smtp.elasticemail.com",
-              Username: "kimothoalex2001@gmal.com",
-              Password: "26F2A1AAD8DBCC631AA616F072D240872E96",
-              To: "smtp.elasticemail.com",
-              From: document.getElementById("email").value,
-              Subject: "New contact form inquiry",
-              Body: "And this is the body",
-            }).then(
-              (message) => alert(message)
-              );
-          }
-      </section>  
+   
+    
+
+     </section>
 
 
-      // --footer-->
+      <!-- // --footer--> 
       <section class= "footer">
         <div class="footer-container container">
           <div class="footer-box">
@@ -163,5 +154,15 @@
        <!--link to js-->
          <script src="index.js">
     </script>
+
+    <div id="data"></div>
   </body>
+
+  <script>
+    function promptMe(){
+          let text = "Thank you for Submitting! We will be Back to you shortly!"
+          alert (text)
+        }
+  </script>
+
 </html>
