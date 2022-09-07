@@ -1,130 +1,37 @@
-fetch("https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMake/merc?format=json")
-        .then(res => res.json())
-        .then(data => console.log(data));
-        document.getElementById("carros").innerHTML = data;
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let search = document.querySelector('.search-box');
-
-// document.querySelector('#search-icon'); onclick = () =>{
-//     search.classList.toggle('active');
-//     menu.classList.replace('active');
-// }
-
-// let menu = document.querySelector('.nav-bar');
-
-// document.querySelector('#menu-icon'); onclick = () =>{
-//     menu.classList.toggle('active');
-//     search.classList.remove('active');
-//  }
-
-
-// let header = document.querySelector('header');
-
-// window.addEventListener('#scroll'), () => {
-//     header.classList.toggle('shadow', window.scrollY > 0 );
-
-// }
 
 // let carInfo = {
-//     result: function(carValue){
-     
+//     result: function(model){
+        fetch("https://quote-garden.herokuapp.com/api/v3/quotes")
+        .then(res => res.json())
+        .then(data => console.log(data));
+//     },
+
        
     
 //     vehicleInfo: function(data){
-//         const{Value} = data.object;
-//         const{Brand} = data.object;
-//         // const{Model} = data.object;
-//         // const{Model Year} = data.object;
-//         // const{Fuel} = data.object;
-//         // const{Fipe code} = data.object;
-//         const{mesReference} = data.object;
-//         const{vehicleType} = data.object;
-//         // const{Acronym Fuel} = data.object;
+//         const {MakeName} = data.Results[1]
+//         const {VehicleTypeId} = data.Results[2]
+//         const {VehicleTypeName} = data.Results[3]
+//         console.log(VehicleTypeId, VehicleTypeName, MakeName);
 
-//         document.querySelector(".value ").innerText = Value;
+
+//         document.querySelector(".makeName ").innerText = MakeName;
+//         document.querySelector(".vehicleTypeId ").innerText = VehicleTypeId;
+//         document.querySelector(".vehicleTypeName ").innerText = VehicleTypeName;
+//         },
+//         search: function() {  
+//                 this.result(document.querySelector(".search-bar").value )
 //         }
 
 //     }
 
-//     document.querySelector(".btn1").addEventListener("click", function (){
-//         carInfo.primary-Button()
+//     document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+//         if (event.keyCode === 13) {
+
+//         carInfo.search()
+// }
 //     })
+
 
 
     
