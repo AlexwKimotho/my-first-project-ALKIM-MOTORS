@@ -47,7 +47,45 @@
     
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <!-- <section class = "Contact us" id ="Contact Us">
+      <div class="contact-text-box">
+        <h1>
+          CONTACT-US
+
+          
+        </h1> -->
+    <div class="contact-container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" is required />
+        <input
+          type="email"
+          id="email"
+          placeholder="Email Address"
+          is
+          required
+        />
+        <input type="text" id="phone" placeholder="Phone Number" is required />
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button id="send" onclick="promptMe()">Submit</button>
+      </form>
+    </div> 
+     </section>
     <script src="index.js">
     </script>
+    
 </body>
+
+<script>
+  function promptMe(){
+        let text = "Thank you for Submitting! We will be Back to you shortly!"
+        alert (text)
+      }
+</script>
 </html>
