@@ -1,4 +1,22 @@
+function randomQuote(){
+        fetch( "https://quote-garden.herokuapp.com/api/v3/quotes")
+          .then(response => response.json()) 
+          .then(data => {
+            quoteText.textContent = data.content;
+            quoteTags.textContent = data.tags;
+            quoteAuthor.textContent = data.author;
+            })
+        }
+        randomQuote();
+         quote-btn .addEventListener('click', () => {
+            randomQuote();
+        })
 
+
+
+
+
+        
 // // let carInfo = {
 // //     result: function(model){
 //         fetch("https://quote-garden.herokuapp.com/api/v3/quotes")
