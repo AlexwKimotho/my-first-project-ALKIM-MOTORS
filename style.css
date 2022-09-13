@@ -147,3 +147,15 @@ form input, form textarea {
     border-radius: 30px;
 
  }
+ .like__btn {
+    padding: 10px 15px;
+    background: #456150;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    color: #e8efff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
