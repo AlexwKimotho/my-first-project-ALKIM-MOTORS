@@ -39,6 +39,7 @@ body {
     padding: 50px 35px;
     background-color: #fff;
     border-radius: 5px;
+    opacity: 0.7;
 }
 .quote-wrapper .quote-body .icon-quote {
     text-align: center;
@@ -106,7 +107,7 @@ body {
 }
 
 form {
-    background:rgb(230, 215, 215);
+    background: rgb(235, 241, 235);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
