@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 * {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    margin-top: 0;
+    
 }
 body {
     background: url(images/forest.jpg);
-    height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .quote-wrapper {
-    width: 450px;
-    height: 370px;
-    margin: 0 10px;
+    width: 500px;
+    height: 320px;
+    margin: 0 auto;
 }
 .quote-wrapper .quote-heading {
     text-align: center;
@@ -108,11 +110,14 @@ form {
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 4500px;
     border-radius: 10px;
-    margin-left: 50%;
     opacity: 0.7;
+    margin-top: 0 auto;    
+    margin-bottom: 0 auto;
+    height: 50%;
+    justify-content: center;
 }
 
 form h3 {
